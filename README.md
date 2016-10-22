@@ -2,43 +2,41 @@
 Segshow_3D is the visualization GUI which shows cell segmentation result and raw images together in 3D view
 
 
- ![image](https://github.com/George-wu509/Embryo-nuclei-segmentation/blob/master/%5Bfunctions%5D/1.png)
+ ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover1.png)
+ ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover2.png)
+ ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover3.png)
 
 
 Introduction
 -------------------------
-To identify Zebrafish embryo nucleus from images, we apply 3D image segmentation to detect target and locate nuclei xyz coordinates. In here we develop and test different 3D segmentation code functions to improve the ability to find nuclei maxima from smoothed iamges. I have packed necessary code files here, and a GUI is also included to show segmentation result and compare with raw images.  
+To identify Zebrafish embryo nucleus from images, we apply 3D image segmentation to detect target and locate nuclei xyz coordinates. Segshow_3D is the visualization GUI which shows cell segmentation result and raw images together in 3D view, and is the sub-GUI to our 3D cell segmentation main GUI. 
 
 
-How to run?
+How to run Raw_image3D GUI?
 -------------------------
-1. download this repository to your local computer, it should contains RUN_max.m, Previous_result.mat, README.md, and three folders described in what included.  
-2. Run RUN_max.m in matlab.   
+1. download this repository to your local computer. It should contains Raw_image3D.m, Raw_image3D.fig. We also provide example dataset data1.mat which you can download here: https://mega.nz/#F!BAMixDQI!CA3ylmkZwboPSSzYXQq04g
+2. Run Raw_image3D or double-click Raw_image3D.fig in matlab.   
 
 
-How to test new function?
+How to use this GUI? 
 -------------------------
-1. A new segmentation function code should contains the same input and output as original 'maxima3D' code.  
-2. put your new segmentation code in folder /[Segmentation function here]  
-3. Replace the ''maxima3D'' in line 11 of RUN_max() as your new function.  
+1. After import data file by clicking ''Open datafile'' button, main figure should display 3D segmentation points(x,y,z), and cross-section raw image. 
+2. Using the Z-stack slider bar or input value directly to choice the z-stack raw image you want to display 
+3. Using the Consecutive z-stack +- slider bar to choice the display range of 3D segmentation points. To compare the single slice segmentation result with one raw image, please input 0.
+4. After clicking the 'Default colorbar value' box, color of each marker is the intensity of segmentation point.
+5. Using image alpha to setup the image transparent level(from 0 to 1)
+6. You can also mark the segmentaiton reuslt by clicking 'Segmentation flag on' box.
 
 
-INPUT and OUTPUT
+About Data file
 -------------------------
-INPUT   
-  maximaintclean= a matrix output of the maxima coordinates in [x1,y1;xy,y2;,x3,y3;...] format  
-  fragall=all of the maxima that were closer together than 'dist'  
-  fragconc=the maxima after they are combined into a single averaged point  
-  coloroverlay: 2D slices showing the gaussian smoothed images with centerpoints highlighted in purple  
-  
-OUTPUT  
-  smoothdapi=stack of greyscale images  (x by y by z array)  
-  p.noisemax=maxima below this threshhold will be flattenned (imhmax()) (usually 10)  
-  p.noisemin=minima less than this value are eliminated using (imhmin()) (usually 10)  
-  p.pix=number of pixels in xy direction (usually 1024)  
-  p.dist=2 nuclei closer than this in pixels will be combined  (usually 6)  
-  p.showimage:determines whether to show the images or not  (0=no, 1=yes)  
+data.mat contains four variables in cell format:
 
+NFstk: multi-layer raw image matrix
+xyzintsegdat: 3D segmentation points([x,y,z, I1, I2]) calculated from main GUI.
+chal_info: image channel information.
+imagename: image file name
+ 
 
 What included? 
 -------------------------
