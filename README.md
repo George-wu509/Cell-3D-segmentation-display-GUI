@@ -45,4 +45,4 @@ Authors
 
 License
 -------------------------
-All the software in this repository is released under the MIT License. See [LICENSE](https://github.com/kiteco/plugins/blob/master/LICENSE) for details.
+All the software in this repository is released under the MIT License. See [LICENSE](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/LICENSE) for details.
