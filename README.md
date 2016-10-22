@@ -50,7 +50,7 @@ What included?
 
 Authors
 -------------------------
-- `George Wu` [George Wu](https://github.com/George-wu509)(http://tzuching1.weebly.com/)
+- [George Wu] (https://github.com/George-wu509)(http://tzuching1.weebly.com/)
 
 
 License
