@@ -29,12 +29,12 @@ How to use this GUI?
 
 About Data file
 -------------------------
-data.mat contains four variables in cell format:
+data.mat contains four variables in cell format:  
 
-NFstk: multi-layer raw image matrix
-xyzintsegdat: 3D segmentation points([x,y,z, I1, I2]) calculated from main GUI.
-chal_info: image channel information.
-imagename: image file name
+NFstk: multi-layer raw image matrix  
+xyzintsegdat: 3D segmentation points([x,y,z, I1, I2]) calculated from main GUI.  
+chal_info: image channel information.  
+imagename: image file name  
  
 
 What included? 
