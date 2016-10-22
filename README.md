@@ -9,14 +9,13 @@ Introduction
 -------------------------
 To identify Zebrafish embryo nucleus from images, we apply 3D image segmentation to detect target and locate nuclei xyz coordinates. Segshow_3D is the visualization GUI which shows cell segmentation result and raw images together in 3D view, and is the sub-GUI to our 3D cell segmentation main GUI. 
 
- ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover2.png)
 
 How to run Raw_image3D GUI?
 -------------------------
 1. download this repository to your local computer. It should contains Raw_image3D.m, Raw_image3D.fig. We also provide example dataset data1.mat which you can download here: https://mega.nz/#F!BAMixDQI!CA3ylmkZwboPSSzYXQq04g
 2. Run Raw_image3D or double-click Raw_image3D.fig in matlab.   
 
- ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover3.png)
+ ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover2.png)
 
 How to use this GUI? 
 -------------------------
@@ -27,6 +26,7 @@ How to use this GUI?
 5. Using image alpha to setup the image transparent level(from 0 to 1)
 6. You can also mark the segmentaiton reuslt by clicking 'Segmentation flag on' box.
 
+ ![image](https://github.com/George-wu509/Cell-3D-segmentation-display-GUI/blob/master/cover/Segshow3D%20cover3.png)
 
 About Data file
 -------------------------
