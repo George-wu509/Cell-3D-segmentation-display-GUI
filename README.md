@@ -48,5 +48,11 @@ What included?
 * /[control 1- DAPI and pSmad with cover] folder contains p.mat, stack.mat
 
 
-## License
+Authors
+-------------------------
+- `George Wu` [George Wu](https://github.com/George-wu509)(http://tzuching1.weebly.com/)
+
+
+License
+-------------------------
 All the software in this repository is released under the MIT License. See [LICENSE](https://github.com/kiteco/plugins/blob/master/LICENSE) for details.
